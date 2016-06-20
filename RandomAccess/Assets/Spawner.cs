@@ -13,8 +13,8 @@ public class Spawner : MonoBehaviour
 		{
 			var pos = transform.position;
 
-			pos.x += 1.0f * Mathf.Cos (i / (float)size * 2.0f * Mathf.PI);
-			pos.z += 1.0f * Mathf.Sin (i / (float)size * 2.0f * Mathf.PI);
+			pos.x += 4.5f * Mathf.Cos (i / (float)size * 2.0f * Mathf.PI);
+			pos.z += 4.5f * Mathf.Sin (i / (float)size * 2.0f * Mathf.PI);
 
 			Instantiate (m_Students, pos, Quaternion.identity);
 		}
